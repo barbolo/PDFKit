@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{pdfkit}
-  s.version = "0.4.6"
+  s.version = "0.4.6.galileo.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["jdpace"]
@@ -92,4 +92,3 @@ or inside RVM folder: export TO=`which pdfkit | sed 's:/pdfkit:/wkhtmltoimage:'`
     s.add_dependency(%q<mocha>, [">= 0"])
   end
 end
-
