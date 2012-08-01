@@ -16,7 +16,7 @@ case format
   when 'pdf'
     convert = :to_pdf
   else
-    convert = [:to_image, format]
+    convert = "to_#{format}".to_sym
     options[:width]   = 254
     options[:quality] = 10
 end
