@@ -108,7 +108,7 @@ class PDFKit
     end
     result = File.read(path) if path
 
-    raise "command failed: #{invoke}" if result.to_s.strip.empty?
+    raise "command failed: #{invoke}" if result.to_s.force_encoding('ASCII-8BIT').strip.empty?
     return result
   end
 
