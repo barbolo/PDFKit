@@ -1,3 +1,3 @@
 class PDFKit
-  VERSION = "0.5.2.galileo.1"
+  VERSION = "0.5.3.image"
 end

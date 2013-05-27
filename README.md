@@ -12,6 +12,7 @@ Create PDFs using plain old HTML+CSS. Uses [wkhtmltopdf](http://github.com/antia
 
 1. Install by hand (recommended):
 
+
     <https://github.com/pdfkit/pdfkit/wiki/Installing-WKHTMLTOPDF-and-WKHTMLTOIMAGE>
 
 2.  Try using the wkhtmltopdf-binary gem (mac + linux i386)
@@ -40,7 +41,7 @@ Create PDFs using plain old HTML+CSS. Uses [wkhtmltopdf](http://github.com/antia
 
     # Add any kind of option through meta tags
     PDFKit.new('<html><head><meta name="pdfkit-page_size" content="Letter")
-    
+
     # PDFKit.new takes the HTML and any options for wkhtmltoimage
     # run `wkhtmltoimage --extended-help` for a full list of options
     kit = PDFKit.new(html, :width => 640, :quality => 75)
@@ -133,7 +134,7 @@ PDFKit comes with a middleware that allows users to get a PDF view of any page o
    asset host.
 
 *  **Mangled output in the browser:** Be sure that your HTTP response
-   headers specify "Content-Type: application/pdf" 
+   headers specify "Content-Type: application/pdf"
 
 ## Note on Patches/Pull Requests
 
